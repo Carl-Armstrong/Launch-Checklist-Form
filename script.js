@@ -46,7 +46,8 @@ window.addEventListener("load", function() {
          document.getElementById("launchStatus").style.color = "green";
       }
 
-      event.preventDefault(); // To prevent the form from clearing after it "submits"
+      event.preventDefault(); // To prevent the page from clearing after it "submits"
+      document.querySelector("form").reset(); // clears the form
    });
 });
 
